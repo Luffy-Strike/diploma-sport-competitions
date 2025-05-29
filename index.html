@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Спортивные соревнования</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="logo">СпортГород</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="competitions.html">Мои соревнования</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="events">
+        <h2>Ближайшие события</h2>
+        <div id="event-cards"></div>
+      </section>
+
+      <section id="register">
+        <h2>Регистрация на событие</h2>
+        <form id="registration-form">
+          <label>Имя:
+            <input type="text" name="name" required/>
+          </label>
+          <label>Email:
+            <input type="email" name="email" required/>
+          </label>
+          <label>Событие:
+            <select name="event" id="event-select" required></select>
+          </label>
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Городские спортивные соревнования</p>
+      <div class="contact-info">
+        <strong>Контакты</strong>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: sport@example.com</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

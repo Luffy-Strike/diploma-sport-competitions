@@ -1,0 +1,136 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Легкий фоновый цвет */
+  color: #333; /* Текстовый цвет */
+  min-height: 100vh; /* Убедимся, что страница занимает всю высоту экрана */
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Минимальная высота — вся высота экрана */
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c757d; /* Нежный серый */
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.main-nav a:hover {
+  opacity: 0.7;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex-grow: 1; /* Занимает оставшееся пространство */
+}
+
+footer {
+  background-color: #6c757d; /* Нежный серый */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* Позиционирует footer внизу */
+}
+
+/* Карточки событий */
+.event-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.event-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.event-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.event-card p {
+  color: #666;
+}
+
+/* Адаптивность */
+@media (min-width: 768px) {
+  .event-card {
+    width: calc(33% - 1rem); /* Три колонки */
+    margin-right: 1rem;
+  }
+}
+
+/* Кнопка регистрации */
+#registration-form button {
+  padding: 0.5rem 1rem;
+  background-color: #429ef4; /* Голубая кнопка */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#registration-form button:hover {
+  background-color: #71baff; /* Светлее при наведении */
+}
+
+/* Список зарегистрированных событий */
+.registered-event {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+/* Стили для нового блока контактов */
+.contact-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-info strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
